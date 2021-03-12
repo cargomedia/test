@@ -2,7 +2,7 @@ name: 'Delete old issues'
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/10 * * * *'
 
 jobs:
   cleaner:
@@ -12,4 +12,4 @@ jobs:
         with:
           repository-name: 'test'
           repository-owner: 'cargomedia'
-          dry-run: 'true'
+          days-before-deletion: '1625'
