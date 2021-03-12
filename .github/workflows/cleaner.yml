@@ -8,7 +8,7 @@ jobs:
   cleaner:
     runs-on: ubuntu-latest
     steps:
-      - uses: cargomedia/cleaner@master
+      - uses: cargomedia/cleaner@main
         with:
           repository-name: 'test'
           repository-owner: 'cargomedia'
