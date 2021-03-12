@@ -1,0 +1,15 @@
+name: 'Delete old issues'
+
+on:
+  schedule:
+    - cron: '15 * * * *'
+
+jobs:
+  cleaner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cargomedia/cleaner@master
+        with:
+          repository-name: 'test'
+          repository-owner: 'cargomedia'
+          dry-run: 'true'
