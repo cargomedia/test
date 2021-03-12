@@ -10,6 +10,7 @@ jobs:
     steps:
       - uses: cargomedia/cleaner@main
         with:
+          repository-token: ${{ secrets.GITHUB_TOKEN }}
           repository-name: 'test'
           repository-owner: 'cargomedia'
           days-before-deletion: '1625'
