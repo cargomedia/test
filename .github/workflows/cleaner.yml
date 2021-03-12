@@ -2,7 +2,7 @@ name: 'Delete old issues'
 
 on:
   schedule:
-    - cron: '15 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   cleaner:
